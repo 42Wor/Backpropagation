@@ -38,8 +38,8 @@ def create_3d_loss_landscape():
     W1, W2 = np.meshgrid(w1_range, w2_range)
     
     # Training data
-    X = np.array([[1.0, 2.0], [2.0, 1.0], [3.0, 1.0], [1.0, 3.0]])
-    y_true = np.array([8.0, 7.0, 9.0, 11.0])
+    X = np.array([[1.0, 2.0], [2.0, 1.0], [3.0, 1.0], [1.0, 3.0],[2.0, 1.0], [3.0, 1.0], [1.0, 3.0]])
+    y_true = np.array([8.0, 7.0, 9.0, 11.0, 7.0, 9.0, 11.0])
     
     # Calculate loss for each weight combination
     Loss = np.zeros_like(W1)
